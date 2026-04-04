@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-xl font-semibold mb-4">Upload Image</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" class="mb-4 border p-2 rounded" required>
+
+    <br>
+
+    <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+        Predict
+    </button>
+</form>
+{% endblock %}

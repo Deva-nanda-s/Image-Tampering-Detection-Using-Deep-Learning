@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Tampering Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-900 p-4 text-white flex justify-center gap-6">
+        <a href="/" class="hover:text-blue-400">Home</a>
+        <a href="/detect" class="hover:text-blue-400">Detect</a>
+        <a href="/how" class="hover:text-blue-400">How it Works</a>
+        <a href="/about" class="hover:text-blue-400">About</a>
+    </nav>
+
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-8 rounded-2xl shadow-lg w-[400px] text-center">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+</body>
+
+</html>
