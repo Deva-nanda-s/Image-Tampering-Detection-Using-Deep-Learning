@@ -18,7 +18,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg"}
 
 # Load model
-model = load_model("final_model_april.keras")
+model = load_model("best_model.keras")
 
 
 # ================================
