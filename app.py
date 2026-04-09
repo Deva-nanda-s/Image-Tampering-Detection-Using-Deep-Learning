@@ -46,7 +46,7 @@ def ela_image(path):
 
     scale = 255.0 / max_diff
     ela = ImageEnhance.Brightness(ela).enhance(scale)
-    ela = ela.resize((224, 224))
+    ela = ela.resize((128,128))
 
     return np.array(ela) / 255.0
 
